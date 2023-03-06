@@ -1,0 +1,80 @@
+@font-face {
+    font-family: Alata ;
+    src: url(../font/Alata/Alata-Regular.ttf);
+}
+@font-face {
+    font-family: Josefin;
+    src: url(../font/Josefin_Sans/static/JosefinSans-Thin.ttf);
+}
+body{
+    margin: 0 auto;
+
+}
+/*Header*/
+header{
+    background-color: hsl(0, 0%, 0%);/*mettre en transparence*/
+    background-image: url(/assets/images/desktop/image-hero.jpg);
+    background-size: cover ;
+    background-position: center;
+    color: hsl(0, 0%, 100%);
+    padding-bottom: 8rem;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+    padding: 4rem 9rem 4rem 9rem;
+}
+li{
+    /* Display: inline pour mettre sur une ligne tous les éléments de la liste*/
+    display: inline;
+
+}
+a{
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+    font-family: Alata;
+    padding: 0.8rem;
+    font-size: 14px;
+}
+h1{
+    font-family: Josefin;
+    border: hsl(0, 0%, 100%) solid 2px;
+    padding: 20px;
+    font-size: 55px;
+    max-width: 27rem;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 9rem;
+}
+/*Footer*/
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+/*Responsive*/
+@media (min-width: 375px) and (max-width: 1440px) {
+    body{
+        background-color: blueviolet;
+    }
+    header{
+        background-image: url(../images/mobile/image-hero.jpg);
+    }
+    .top{
+        justify-content:space-evenly;
+    }
+    /* Design de la NavBar sur mobile*/
+    .NavBar{
+        background-color: hsl(0, 0%, 0%) ;
+        font-family: Josefin;
+        max-width: 15rem;
+        text-align: left;
+    }
+    h1{
+        font-size: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 15rem;
+        padding: 1rem 4rem 1rem 2rem;
+        border-width: 3px;
+    }
+
+}
