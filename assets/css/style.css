@@ -45,7 +45,77 @@ h1{
     display: flex;
     justify-content: space-around;
     margin-left: 9rem;
+    text-transform: uppercase;
 }
+
+/*Main Content*/
+/*Section 1*/
+.section1{
+    display: flex;
+    justify-content: center;
+    margin-top: 9rem;
+    position: relative;
+    margin-bottom: 9rem;
+}
+.interact img{
+    max-width: 40rem;
+    position: absolute;
+    /* décalage de l'image vers la gauche*/
+    transform: translate(-14rem,0);
+}
+.content1{
+    padding: 5rem;
+    background-color: hsl(0, 0%, 100%);
+    /* le titre/texte se met devant l'image */
+    z-index: 1;
+    /* orientation du contenu vis-à-vis de l'image*/
+    transform: translate(17rem, 10rem);
+}
+.content1 h2{
+    font-family: Josefin;
+    font-size: 45px;
+    max-width: 25rem;
+    text-transform: uppercase;
+}
+.section1 p{
+    color:hsl(0, 0%, 55%); 
+    font-family: Alata;
+    max-width: 30rem;
+}
+
+/*Section 2*/
+.topSect{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2rem;
+    margin-left: 14rem;
+    margin-right: 14rem ;
+}
+.topSect h2{
+    font-family: Josefin;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+.topSect button{
+    background-color: hsl(0, 0%, 100%);
+    font-family: Alata;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: hsl(0, 0%, 0%);
+    letter-spacing: 0.2rem;
+    border: hsl(0, 0%, 0%) solid 1px;
+    padding: 0.5em 5em 0.5em 5em;
+}
+.topSect a:hover{
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(0, 0%, 0%);
+    cursor: pointer;
+}
+.picLine1{
+    display: flex;
+    flex-direction: column;
+}
+
 /*Footer*/
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
@@ -62,12 +132,12 @@ h1{
         justify-content:space-evenly;
     }
     /* Design de la NavBar sur mobile*/
-    .NavBar{
+    /*.NavBar{
         background-color: hsl(0, 0%, 0%) ;
         font-family: Josefin;
         max-width: 15rem;
         text-align: left;
-    }
+    }*/
     h1{
         font-size: 40px;
         margin-left: auto;
