@@ -112,8 +112,23 @@ h1{
     cursor: pointer;
 }
 .picLine1{
+    /* Alignement des images sur une ligne */
+    display: inline-flex;
+    margin-top: 3rem;
+}
+.picLine1 p{
+    color: hsl(0, 0%, 100%);
+    font-family: Josefin;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 25px;
+    padding-left: 3rem;
+    max-width: 6rem;
+    line-height: 1.2;
     display: flex;
-    flex-direction: column;
+    position: absolute;
+    transform: translateY(20rem);
+
 }
 
 /*Footer*/
