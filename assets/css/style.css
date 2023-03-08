@@ -230,6 +230,10 @@ h1{
     }
     .section2 h2{
         /*aligner sur la gauche le titre "our creations"*/
+        text-align: center;
+        justify-content: space-around;
+        padding: 3rem 0rem 3rem 0rem;
+        z-index: 2;
     }
     .PcImg{
         display: none;
@@ -237,9 +241,8 @@ h1{
     .MobileImg{
         display: flex;
         flex-direction: column;
+        justify-content: center;
         max-width: 22rem;
-        margin-bottom: 0.5rem;
-        margin-top: 0.5rem ;
-        margin-left: -13rem;
+        margin-bottom: 1rem;
     }
 }
