@@ -86,7 +86,7 @@ h1{
 .topSect{
     display: flex;
     justify-content: space-between;
-    padding-top: 2rem;/*mettre un margin*/
+    margin-top: 4rem;
     margin-left: 14rem;
     margin-right: 14rem ;
 }
@@ -209,28 +209,30 @@ h1{
     .interact img{
         transform: none;
         max-width: 20rem;
-        margin-left: 4rem;
+        justify-content: center;
+        margin-top: -3rem;/*diminution du margin-top pour la version mobile*/
     }
     .content1{
         text-align: center;
         position: relative;
         transform: translate(0rem, 15rem);
         padding-top: none;
-    }
-    .content1 {
-        /*border: none ;*/
         padding: 0.1rem;
         max-width: 20rem;
+        margin-top: -3rem ;
     }
     .content1 h2{
         font-size: 30px;
         max-width: 100%;
     }
-    .PcImg{
-        display: none;
+    .content1 p{
+        line-height: 1.5;
     }
     .section2 h2{
-        justify-content: left;
+        /*aligner sur la gauche le titre "our creations"*/
+    }
+    .PcImg{
+        display: none;
     }
     .MobileImg{
         display: flex;
