@@ -212,22 +212,32 @@ h1{
         margin-left: 4rem;
     }
     .content1{
-        /*transform: none;*/
         text-align: center;
         position: relative;
         transform: translate(0rem, 15rem);
         padding-top: none;
     }
+    .content1 {
+        /*border: none ;*/
+        padding: 0.1rem;
+        max-width: 20rem;
+    }
     .content1 h2{
         font-size: 30px;
         max-width: 100%;
-
-    }
-    .content1 p{
-        max-width: 30rem;
     }
     .PcImg{
         display: none;
     }
-
+    .section2 h2{
+        justify-content: left;
+    }
+    .MobileImg{
+        display: flex;
+        flex-direction: column;
+        max-width: 22rem;
+        margin-bottom: 0.5rem;
+        margin-top: 0.5rem ;
+        margin-left: -13rem;
+    }
 }
