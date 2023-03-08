@@ -82,12 +82,11 @@ h1{
     font-family: Alata;
     max-width: 30rem;
 }
-
 /*Section 2*/
 .topSect{
     display: flex;
     justify-content: space-between;
-    padding-top: 2rem;
+    padding-top: 2rem;/*mettre un margin*/
     margin-left: 14rem;
     margin-right: 14rem ;
 }
@@ -183,7 +182,8 @@ h1{
 /*Responsive*/
 @media (min-width: 375px) and (max-width: 1440px) {
     body{
-        background-color: blueviolet;
+        /*background-color: blueviolet;*/
+        background-color: hsl(0, 0%, 100%);
     }
     header{
         background-image: url(../images/mobile/image-hero.jpg);
@@ -207,13 +207,26 @@ h1{
         border-width: 3px;
     }
     .interact img{
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
+        transform: none;
         max-width: 20rem;
+        margin-left: 4rem;
+    }
+    .content1{
+        /*transform: none;*/
+        text-align: center;
+        position: relative;
+        transform: translate(0rem, 15rem);
+        padding-top: none;
+    }
+    .content1 h2{
+        font-size: 30px;
+        max-width: 100%;
 
     }
-    .picLine1 img, .picLine2 img{
+    .content1 p{
+        max-width: 30rem;
+    }
+    .PcImg{
         display: none;
     }
 
