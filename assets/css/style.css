@@ -85,15 +85,14 @@ h1{
 /*Section 2*/
 .topSect{
     display: flex;
-    justify-content: space-between;
-    margin-top: 4rem;
-    margin-left: 14rem;
-    margin-right: 14rem ;
 }
 .topSect h2{
     font-family: Josefin;
     font-size: 30px;
     text-transform: uppercase;
+    margin-left: 14rem ;
+    display: flex;
+    flex-direction: column;
 }
 .topSect button{
     background-color: hsl(0, 0%, 100%);
@@ -104,11 +103,16 @@ h1{
     letter-spacing: 0.2rem;
     border: hsl(0, 0%, 0%) solid 1px;
     padding: 0.5em 5em 0.5em 5em;
+    /*Alignement du bouton..*/
+    margin: 1rem 10rem 3rem 40rem;
 }
-.topSect a:hover{
+.topSect button:hover{
     color: hsl(0, 0%, 100%);
     background-color: hsl(0, 0%, 0%);
     cursor: pointer;
+}
+.BtnMobile{
+    display: none;
 }
 
 /*Section 2 : 1ère ligne de photos (line1)*/
@@ -228,21 +232,40 @@ h1{
     .content1 p{
         line-height: 1.5;
     }
-    .section2 h2{
-        /*aligner sur la gauche le titre "our creations"*/
-        text-align: center;
-        justify-content: space-around;
-        padding: 3rem 0rem 3rem 0rem;
+    .topSect h2{
         z-index: 2;
+        margin-top: 10rem;
+        margin-left: 4rem ;
+        text-align: center;
     }
-    .PcImg{
+    .PcImg, .BtnPc{
         display: none;
     }
     .MobileImg{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
         max-width: 22rem;
-        margin-bottom: 1rem;
+    }
+    .BtnMobile{
+        background-color: hsl(0, 0%, 100%);
+        font-family: Alata;
+        text-transform: uppercase;
+        font-size: 12px;
+        color: hsl(0, 0%, 0%);
+        letter-spacing: 0.2rem;
+        border: hsl(0, 0%, 0%) solid 1px;
+    }
+    .line1{
+        margin-left: 0rem;
+        margin-right: 0rem;
+        margin-top: 2rem;
+        margin-bottom: 0.5rem;
+        justify-content: center;
+    }
+    .picLine1 p, .picLine2 p{
+        color: black;
     }
 }
