@@ -27,7 +27,6 @@ header{
 li{
     /* Display: inline pour mettre sur une ligne tous les éléments de la liste*/
     display: inline;
-
 }
 a{
     text-decoration: none;
@@ -47,7 +46,6 @@ h1{
     margin-left: 9rem;
     text-transform: uppercase;
 }
-
 /*Main Content*/
 /*Section 1*/
 .section1{
@@ -186,44 +184,41 @@ h1{
 footer{
     background-color: hsl(0, 0%, 0%);
     color: hsl(0, 0%, 100%);
-    padding-right: 3rem;
 }
 .FootContainer{
     display: flex;
-    flex-direction: column;
-    padding-top: 2rem;
-    padding-left: 6rem;
+    justify-content: space-between;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+}
+.Container1{
+    margin-left: 8rem ;
+}
+.Container2{
+    text-align: right;
+    margin-right: 10rem;
 }
 .FootLogo img{
     max-width: 8rem;
     padding-bottom: 0.8rem;
 }
-.Contact p{
+.SocialNet img{
+    padding-left: 1rem;
+}
+.SocialNet img:hover{
+    cursor: pointer;
+}
+.Contact a{
     font-family: Alata;
     font-weight: 400;
     font-size: 13px;
-    word-spacing: 1rem;
-}
-.SocialNet{
-    display: flex;
-    justify-content: right;
-    padding-right: 6rem;
-    padding-bottom: 0.8rem;
-}
-.SocialNet img{
-    padding-left: 1rem;
+    word-spacing: 0.5rem;
+    padding-left: 0rem;
 }
 .Copy{
     color: hsl(0, 0%, 55%);
     font-family: Alata;
     font-size: 13px;
-    display: flex;
-    justify-content: right;
-    padding-right: 6rem;
-}
-.SocialNet, .Copy{
-    position: relative;
-    transform: translateY(-4rem);
 }
 .attribution { 
     font-size: 12px; 
@@ -237,18 +232,19 @@ footer{
     color: hsl(228, 71%, 61%); 
     font-family: Josefin;
     font-weight: 600;
-    font-size: 12px; 
+    font-size: 12px;
 }
 .attribution a:hover{
     color: hsl(275, 100%, 63%);
 }
 
-/*Responsive*/
+/*RESPONSIVE*/
 @media (min-width: 375px) and (max-width: 1440px) {
     body{
         /*background-color: blueviolet;*/
         background-color: hsl(0, 0%, 100%);
     }
+    /*Header*/
     header{
         background-image: url(../images/mobile/image-hero.jpg);
     }
@@ -270,6 +266,7 @@ footer{
         padding: 1rem 4rem 1rem 2rem;
         border-width: 3px;
     }
+    /*Main content : section 1*/
     .interact img{
         transform: none;
         max-width: 20rem;
@@ -292,6 +289,7 @@ footer{
     .content1 p{
         line-height: 1.5;
     }
+    /* Main content : section 2*/
     .topSect h2{
         z-index: 2;
         margin-top: 10rem;
@@ -340,7 +338,36 @@ footer{
         margin-top: 2rem;
         padding: 0.5rem 2rem 0.5rem 2rem;
         position: absolute;
-        transform: translateX(70%);
+        transform: translateX(75%);
+        border: hsl(0, 0%, 0%) solid 2px;
     }
-
+    .BtnMobile:hover{
+        background-color: hsl(0, 0%, 0%);
+        color: hsl(0, 0%, 100%);
+        cursor: pointer;
+    }
+    /*Footer*/
+    .FootContainer{
+        flex-direction: column;
+        justify-content: center;
+        /*margin-left: 2.5rem;*/
+    }
+    .Container1 {
+        text-align: center;
+        margin-left: 0rem;
+    }
+    .Contact a{
+        display: grid;
+        padding: 0.5rem;
+    }
+    .Contact{
+        margin-bottom: 2.5rem;
+    }
+    .Container2 {
+        text-align: center;
+        margin-right: 0rem;
+    }
+    /*.attribution{
+        margin-top: 2rem;
+    }*/
 }
