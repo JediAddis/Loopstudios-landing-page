@@ -175,6 +175,9 @@ h1{
     opacity: 0.5;
     cursor: pointer;
 }
+.picLine1 p:hover, .picLine2 p:hover{
+    color: hsl(0, 0%, 0%);
+}
 .MobileImg{
     display: none;
 }
@@ -237,35 +240,50 @@ h1{
         margin-top: 10rem;
         margin-left: 4rem ;
         text-align: center;
+        margin-bottom: -1rem;
     }
     .PcImg, .BtnPc{
         display: none;
     }
+    /*réglage des paramètres margin pour pouvoir aligner les images*/
+    .line1{
+        margin-left: 0.8rem;
+    }
+    .line2 {
+        margin-left: 0.8rem;
+        margin-top: -0.5rem;
+    }
     .MobileImg{
-        display: block;
-        margin-right: auto;
-        margin-left: auto;
+        display: grid;
+        place-items: center;
+        max-width: 21rem;
         margin-top: 0.5rem;
         margin-bottom: 0.5rem;
-        max-width: 22rem;
+        filter: brightness(80%);
+    }
+    .picLine1 p, .picLine2 p{
+        color: hsl(0, 0%, 100%);
+        font-weight: 600;
+        z-index: 5;
+        margin: 0rem;
+        padding-left: 1rem;
+        transform: translateY(4rem);
     }
     .BtnMobile{
         background-color: hsl(0, 0%, 100%);
         font-family: Alata;
         text-transform: uppercase;
-        font-size: 12px;
+        font-size: 14px;
         color: hsl(0, 0%, 0%);
         letter-spacing: 0.2rem;
         border: hsl(0, 0%, 0%) solid 1px;
-    }
-    .line1{
-        margin-left: 0rem;
-        margin-right: 0rem;
-        margin-top: 2rem;
-        margin-bottom: 0.5rem;
+        display: flex;
         justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+        padding: 0.5rem 2rem 0.5rem 2rem;
+        position: absolute;
+        transform: translateX(70%);
     }
-    .picLine1 p, .picLine2 p{
-        color: black;
-    }
+
 }

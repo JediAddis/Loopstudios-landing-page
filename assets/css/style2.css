@@ -1,0 +1,75 @@
+@font-face {
+    font-family: Alata ;
+    src: url(../font/Alata/Alata-Regular.ttf);
+}
+@font-face {
+    font-family: Josefin;
+    src: url(../font/Josefin_Sans/static/JosefinSans-Thin.ttf);
+}
+
+/*Mobile First*/
+body{
+    margin: 0 auto;
+}
+/*Header*/
+header{
+    background-color: hsl(0, 0%, 0%);/*mettre en transparence*/
+    background-image: url(/assets/images/mobile/image-hero.jpg);
+    background-size: cover ;
+    background-position: center;
+    color: hsl(0, 0%, 100%);
+    padding-bottom: 8rem;
+}
+.top{
+    display: flex;
+    /*justify-content: space-between; pour pc*/
+    justify-content:space-evenly;
+    padding: 4rem 9rem 4rem 9rem;
+}
+h1{
+    font-family: Josefin;
+    border: hsl(0, 0%, 100%) solid 3px;
+    padding: 20px;
+    font-size: 40px;
+    max-width: 15rem;
+    display: flex;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+    text-transform: uppercase;
+    padding: 1rem 4rem 1rem 2rem;
+}
+
+/*Body section 1*/
+.section1{
+    display: flex;
+    justify-content: center;
+    margin-top: 9rem;
+    position: relative;
+    margin-bottom: 9rem;
+}
+.interact img{
+    max-width: 20rem;
+    flex-direction: row;
+    position: absolute;
+    /*justify-content: center;*/
+    margin-top: -3rem;
+
+}
+/*.content1{
+    padding: 5rem;
+    background-color: hsl(0, 0%, 100%);
+    z-index: 1;
+    transform: translate(17rem, 10rem);
+}
+.content1 h2{
+    font-family: Josefin;
+    font-size: 45px;
+    max-width: 25rem;
+    text-transform: uppercase;
+}
+.section1 p{
+    color:hsl(0, 0%, 55%); 
+    font-family: Alata;
+    max-width: 30rem;
+}*/
