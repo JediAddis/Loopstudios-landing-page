@@ -183,8 +183,65 @@ h1{
 }
 
 /*Footer*/
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+footer{
+    background-color: hsl(0, 0%, 0%);
+    color: hsl(0, 0%, 100%);
+    padding-right: 3rem;
+}
+.FootContainer{
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+    padding-left: 6rem;
+}
+.FootLogo img{
+    max-width: 8rem;
+    padding-bottom: 0.8rem;
+}
+.Contact p{
+    font-family: Alata;
+    font-weight: 400;
+    font-size: 13px;
+    word-spacing: 1rem;
+}
+.SocialNet{
+    display: flex;
+    justify-content: right;
+    padding-right: 6rem;
+    padding-bottom: 0.8rem;
+}
+.SocialNet img{
+    padding-left: 1rem;
+}
+.Copy{
+    color: hsl(0, 0%, 55%);
+    font-family: Alata;
+    font-size: 13px;
+    display: flex;
+    justify-content: right;
+    padding-right: 6rem;
+}
+.SocialNet, .Copy{
+    position: relative;
+    transform: translateY(-4rem);
+}
+.attribution { 
+    font-size: 12px; 
+    text-align: center; 
+    font-family: Josefin;
+    font-weight: 600;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.attribution a { 
+    color: hsl(228, 71%, 61%); 
+    font-family: Josefin;
+    font-weight: 600;
+    font-size: 12px; 
+}
+.attribution a:hover{
+    color: hsl(275, 100%, 63%);
+}
 
 /*Responsive*/
 @media (min-width: 375px) and (max-width: 1440px) {
