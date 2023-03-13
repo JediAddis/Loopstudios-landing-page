@@ -251,8 +251,11 @@ footer{
     /*Header*/
     header{
         background-image: url(../images/mobile/image-hero.jpg);
+        padding-bottom: 15rem;
     }
-
+    h1{
+        margin-top: 10rem;
+    }
     /* Design de la NavBar sur mobile*/
     .top{
         padding: 0;/*On retire le padding imposer pour la version pc*/
